@@ -86,7 +86,7 @@ func get_value(data map[string]interface{}, keyparts []string) string {
 				return fmt.Sprintf("%f", f)
 			}
 		default:
-			return fmt.Sprintf("%+v", v)
+			return strings.Replace(strings.Replace(fmt.Sprintf("%+v", v), "\n", " ", -1), "\t", " ", -1)
 		}
 	}
 
