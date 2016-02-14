@@ -21,7 +21,7 @@ type LineReader interface {
 var (
 	inputFile   = flag.String("i", "", "/path/to/input.json (optional; default is stdin)")
 	outputFile  = flag.String("o", "", "/path/to/output.json (optional; default is stdout)")
-	outputDelim = flag.String("d", ",", "delimiter used for output values")
+	outputDelim = flag.String("d", "\t", "delimiter used for output values")
 	verbose     = flag.Bool("v", false, "verbose output (to stderr)")
 	showVersion = flag.Bool("version", false, "print version string")
 	printHeader = flag.Bool("p", false, "prints header to output")
